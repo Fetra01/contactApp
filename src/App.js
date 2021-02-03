@@ -1,5 +1,5 @@
 import React from 'react';
-import Liste from './Components/Liste';
+import Contact from './Components/Contact';
 import Header from './interface/Header';
 
 function App() {
@@ -7,7 +7,7 @@ function App() {
     <div className="App">
       <Header />
       <div className="container">
-        <Liste />
+        <Contact />
       </div>
     </div>
   );
