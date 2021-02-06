@@ -1,9 +1,20 @@
 import React, { Fragment } from 'react';
-import { useSelector, useDispatch } from 'react-redux';
+import { useSelector } from 'react-redux';
+import ContactItem from './ContactItem';
 
-export default function Contact() {
+export default function ContactList() {
 
-    const contacts = useSelector( state => state.contacts)
+    let contacts = useSelector(state => state)
+    return(
+        <Fragment>
+            <h1 className="display-4 my-4">Vos Contacts :</h1>
+            {contacts.map(contact => {
+                return <ContactItem key={contact.id} contact={contact} />
+            })}
+        </Fragment>
+    )
+
+    /*const contacts = useSelector( state => state.contacts)
     console.log(contacts)
 
     const shows = useSelector( state => state.show)
@@ -37,5 +48,5 @@ export default function Contact() {
                 </div>
             ))}
         </Fragment>
-    )
+    )*/
 }
