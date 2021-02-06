@@ -1,4 +1,5 @@
 import React, { Fragment } from 'react'
+import { Link } from 'react-router-dom'
 
 export default function Header() {
     return (
@@ -8,10 +9,11 @@ export default function Header() {
                     <a href="/" className="navbar-brand">App Contacts</a>
                     <ul className="navbar-nav d-inline-block">
                         <li className="nav-item d-inline-block mr-2">
-                            <a href="/" className="navbar-brand">Accueil</a>
+                            <Link to="/accueil" className="nav-link">Accueil</Link>
+                            
                         </li>
                         <li className="nav-item d-inline-block mr-2">
-                            <a href="/" className="navbar-brand">Ajouter</a>
+                            <Link to="/ajouter" className="nav-link">Ajouer Contact</Link>
                         </li>
                         <li className="nav-item d-inline-block mr-2">
                             <a href="/" className="navbar-brand">À-Propos</a>
