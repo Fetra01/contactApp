@@ -8,12 +8,12 @@ export default function Header() {
                 <div className="container">
                     <a href="/" className="navbar-brand">App Contacts</a>
                     <ul className="navbar-nav d-inline-block">
-                        <li className="nav-item d-inline-block mr-2">
-                            <Link to="/accueil" className="nav-link">Accueil</Link>
+                        <li className="nav-item d-inline-block mr-5">
+                            <Link to="/contacts" className="nav-link">Accueil</Link>
                             
                         </li>
-                        <li className="nav-item d-inline-block mr-2">
-                            <Link to="/ajouter" className="nav-link">Ajouer Contact</Link>
+                        <li className="nav-item d-inline-block mr-5">
+                            <Link to="/contacts/ajouter-contact" className="nav-link">Ajouer Contact</Link>
                         </li>
                         <li className="nav-item d-inline-block mr-2">
                             <a href="/" className="navbar-brand">À-Propos</a>

@@ -4,8 +4,9 @@ import ContactItem from './ContactItem';
 
 export default function ContactList() {
 
-    let contacts = useSelector(state => state)
+    const contacts = useSelector(state => state.contact.contacts);
     return(
+        
         <Fragment>
             <h1 className="display-4 my-4">Vos Contacts :</h1>
             {contacts.map(contact => {

@@ -1,0 +1,7 @@
+.actions {
+    opacity: 0;
+}
+
+.actions:hover{
+    opacity: 1;
+}
